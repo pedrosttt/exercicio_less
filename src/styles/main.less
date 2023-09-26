@@ -1,3 +1,5 @@
+@import "variaveis.less";
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-    background-color: #f5f6fa;
+    background-color: @corDeFundo;
 }
 
 li {
@@ -20,7 +22,7 @@ li {
 }
 
 header {
-    background-color: #182C61;
+    background-color: @corFundoHeader;
     position: sticky;
     top: 0;
     left: 0;
@@ -41,7 +43,7 @@ header {
         margin-left: 24px;
 
         a {
-        color: #fff;
+        color: @corTexto;
         text-decoration: none;
         }
     }
@@ -65,8 +67,8 @@ section {
 
         .product-button {
             display: block;
-            background-color: #44bd32;
-            color: #fff;
+            background-color: @corBotao;
+            color: @corTexto;
             text-align: center;
             padding: 8px 0;
             border-radius: 8px;
@@ -74,7 +76,7 @@ section {
             text-decoration: none;
 
         &:hover {
-            background-color: #4cd137;
+            background-color: @corHoverBotao;
         }
         }
     }
